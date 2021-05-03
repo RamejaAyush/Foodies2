@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&family=Source+Sans+Pro:wght@300;400;600&display=swap');
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(24, 24, 24);
+  font-family: 'poppins', sans-serif;
+}
+
+nav {
+  position: fixed;
+  z-index: 10;
+  width: 100%;
+  height: 13vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav .logo {
+  margin-left: 5%;
+}
+
+nav .logo a {
+  color: inherit;
+  text-decoration: none;
+}
+
+nav .logo a img {
+  height: 45%;
+  width: 45%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav .navLinks {
+  margin-right: 5%;
+  width: 30%;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav .navLinks i {
+  font-size: 22px;
+}
+
+nav .navLinks a,
+nav .navLinks i {
+  padding: 2.5px;
+  color: #e4e4e4b7;
+  text-decoration: none;
+  z-index: 1;
+  position: relative;
+  transition: color 250ms ease-in-out;
+}
+
+nav .navLinks a::before {
+  position: absolute;
+  z-index: -1;
+  content: '';
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #ffffff;
+  height: 1.5px;
+  transform: scaleX(0);
+  transition: transform 250ms ease-in-out;
+  transform-origin: left;
+}
+
+nav .navLinks a:hover {
+  color: white;
+}
+
+nav .navLinks a:hover::before,
+nav .navLinks a:focus::before {
+  color: white;
+  transform: scaleX(100%);
+}
