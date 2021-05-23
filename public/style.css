@@ -2,7 +2,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&family=Source+Sans+Pro:wght@300;400;600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Aladin&display=swap');
 
-/* removing basic styles */
 * {
   padding: 0;
   margin: 0;
@@ -265,7 +264,6 @@ nav.scrolled .logo a img {
   height: 100%;
 }
 .form-section .right-form {
-  background-color: rgba(127, 255, 212, 0.534);
   width: 49.5%;
   height: 100%;
 }
@@ -348,11 +346,94 @@ input[type='submit'] {
   border: 1px solid #fff;
   transition: all 250ms ease-in-out;
 }
+
 input[type='submit']:hover,
 input[type='submit']:focus {
   background-color: #ffffff;
   color: black;
 }
+
+.right-form .right-link-header {
+  width: 100%;
+  height: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.links {
+  width: 100%;
+  height: 90%;
+  display: flex;
+  flex-direction: space-around;
+  flex-direction: column;
+}
+.ayush,
+.arnold {
+  width: 100%;
+  height: 50%;
+}
+
+.ayush .name-link,
+.arnold .name-link {
+  width: 100%;
+  height: 20%;
+  text-align: center;
+}
+
+.ayush .name-link h1,
+.arnold .name-link h1 {
+  font-size: 25px;
+}
+
+.ayush .social-links,
+.arnold .social-links {
+  width: 100%;
+  height: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ayush .social-links .all-social-links,
+.arnold .social-links .all-social-links {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.ayush .social-links .all-social-links a,
+.arnold .social-links .all-social-links a {
+  text-decoration: none;
+  color: #bebebe;
+  transition: all 250ms ease-in-out;
+}
+.ayush .social-links .all-social-links a:hover,
+.ayush .social-links .all-social-links a:focus,
+.arnold .social-links .all-social-links a:focus,
+.arnold .social-links .all-social-links a:hover {
+  text-decoration: underline;
+  color: #ffffff;
+}
+
+.arnold .img,
+.ayush .img {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.arnold .img img,
+.ayush .img img {
+  width: 20%;
+  height: 100%;
+  object-fit: cover;
+}
+
 @media screen and (max-width: 1104px) {
   .features {
     height: 250vh;
@@ -366,6 +447,7 @@ input[type='submit']:focus {
     width: 60%;
   }
 }
+
 @media screen and (max-width: 1024px) {
   .nav-links {
     width: 50%;
@@ -375,6 +457,7 @@ input[type='submit']:focus {
     font-size: 5vh;
   }
 }
+
 @media screen and (max-width: 768px) {
   .burger {
     display: block;
