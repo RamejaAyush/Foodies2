@@ -27,6 +27,10 @@ app.get('/order', (req, res) => {
   res.render('order', { title: 'order' })
 })
 
+app.get('/about', (req, res) => {
+  res.render('about', { title: 'about' })
+})
+
 app.use((req, res, next) => {
   res.status(404).render('404', { title: '404' })
 })
