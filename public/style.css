@@ -491,6 +491,156 @@ input[type='submit']:focus {
   filter: brightness(0.6);
   box-shadow: 0 0 200px rgba(0, 0, 0, 0.952) inset;
 }
+
+.all-things {
+  width: 100%;
+  height: 150vh;
+  padding: 0 5rem;
+}
+.all-things .heading-all {
+  width: 100%;
+  height: 7vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem;
+}
+.heading-all .add-own a {
+  padding: 0.5rem;
+  border: 1px solid white;
+  text-decoration: none;
+  transition: all 150ms ease-in-out;
+}
+
+.heading-all .add-own a:hover {
+  color: black;
+  background-color: white;
+}
+
+.all-things .main-cooking {
+  width: 100%;
+  height: 250vh;
+}
+
+.main-cooking {
+  display: flex;
+  flex-direction: column;
+  padding: 0 2rem;
+}
+.main-cooking .all-meals {
+  width: 100%;
+  height: 25%;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-cooking .all-dishes {
+  width: 100%;
+  height: 75%;
+  display: flex;
+  flex-direction: column;
+}
+
+.heading-dishes {
+  width: 100%;
+  height: 10%;
+  display: flex;
+  align-items: center;
+}
+
+.dishes {
+  width: 100%;
+  height: 90%;
+}
+
+.heading-meals {
+  width: 100%;
+  height: 20%;
+  display: flex;
+  align-items: center;
+}
+
+.meals {
+  width: 100%;
+  height: 80%;
+}
+
+.main-cooking .all-meals .line,
+.main-cooking .all-dishes .line {
+  width: 100%;
+  height: 30%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.cooking-card {
+  width: 25%;
+  height: 45vh;
+  border: 1px solid white;
+}
+
+.cooking-card .cooking-card-header {
+  width: 100%;
+  height: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cooking-card .cooking-image {
+  width: 100%;
+  height: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.cooking-card .cooking-image img {
+  margin: auto;
+  width: 100%;
+  height: 100%;
+}
+
+.cooking-card .link-cooking {
+  width: 100%;
+  height: 20%;
+}
+
+.cooking-card .link-cooking a {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  font-size: 20px;
+  transition: all 350ms ease-in-out;
+}
+
+.cooking-card .link-cooking a::before {
+  content: '';
+  z-index: -1;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  background-color: white;
+  transform-origin: left;
+  transform: scaleX(0);
+  transition: all 350ms ease-in-out;
+}
+
+.cooking-card .link-cooking a:hover::before,
+.cooking-card .link-cooking a:focus::before {
+  transform: scaleX(1);
+}
+
+.cooking-card .link-cooking a:hover {
+  color: black;
+}
+
 /* *order section */
 .order-home {
   width: 100%;
