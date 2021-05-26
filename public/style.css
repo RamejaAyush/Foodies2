@@ -2,6 +2,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&family=Source+Sans+Pro:wght@300;400;600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Aladin&display=swap');
 
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -647,13 +666,12 @@ input[type='submit']:focus {
   height: 100vh;
   background: url('./media/order.jpg');
   background-repeat: none;
-  background-position: center center;
+  background-position: center;
   background-size: cover;
   filter: brightness(0.6);
   box-shadow: 0 0 200px rgba(0, 0, 0, 0.952) inset;
 }
-
-@media screen and (max-width: 1104px) {
+.all-websites @media screen and (max-width: 1104px) {
   .features {
     height: 250vh;
   }
