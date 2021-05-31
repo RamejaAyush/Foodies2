@@ -30,6 +30,12 @@ app.get('/order', (req, res) => {
 app.get('/about', (req, res) => {
   res.render('about', { title: 'about' })
 })
+app.get('/login', (req, res) => {
+  res.render('login', { title: 'login' })
+})
+app.get('/register', (req, res) => {
+  res.render('register', { title: 'register' })
+})
 
 app.use((req, res, next) => {
   res.status(404).render('404', { title: '404' })
