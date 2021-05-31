@@ -1,9 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
   <%- include('./particals/head.ejs') %>
-  <body>
+  <body class="reg">
     <%- include('./particals/RegisterNav.ejs') %>
-    <h1>Register</h1>
+    <div class="login">
+      <div class="login-container">
+        <div class="header-login">
+          <h1>Register</h1>
+        </div>
+        <div class="form-section reg">
+          <form action="#">
+            <div class="email">
+              <h3>Email</h3>
+              <input
+                type="email"
+                id="loginEmail"
+                placeholder="example: xyz@gmail.com"
+                required
+                autocomplete="off"
+              />
+            </div>
+            <div class="password">
+              <h3>Password</h3>
+              <input
+                type="password"
+                name="password"
+                id="pass"
+                placeholder="Your password"
+                autocomplete="off"
+                required
+              />
+            </div>
+            <div class="submit">
+              <input type="submit" id="sub" value="Register" />
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
     <script src="./app.js"></script>
   </body>
 </html>
