@@ -510,7 +510,7 @@ input[type='submit']:focus {
 .cooking-home {
   width: 100%;
   height: 100vh;
-  background: url('./media/cooking.jpg');
+  background: url('../media/cooking.jpg');
   background-repeat: none;
   background-attachment: fixed;
   background-position: center center;
