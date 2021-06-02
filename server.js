@@ -35,6 +35,10 @@ app.get('/meals', (req, res) => {
   res.render('meals', { title: 'meals' })
 })
 
+app.get('/recipe', (req, res) => {
+  res.render('recipe', { title: 'recipe' })
+})
+
 app.get('/login', (req, res) => {
   res.render('login', { title: 'login' })
 })

@@ -3,13 +3,25 @@
   <%- include('./particals/head.ejs') %>
   <body>
     <%- include('./particals/nav.ejs') %>
-    <div class="cooking-home"></div>
+    <div class="cooking-home">
+      <div class="text-floating">
+        <h1>Cooking</h1>
+        <h1>Section</h1>
+      </div>
+      <div class="scroll">
+        <h1 class="animation-bounce">
+          <i class="fas fa-angle-double-down"></i>
+        </h1>
+      </div>
+    </div>
     <div class="all-things">
       <div class="header"></div>
       <div class="heading-all">
         <h1>All Meals & Dishes</h1>
         <div class="add-own">
           <a href="#">add your own</a>
+          <a href="/meals">All Meals</a>
+          <a href="/recipe">All Recipes</a>
         </div>
       </div>
       <hr />

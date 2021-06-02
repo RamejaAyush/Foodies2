@@ -119,6 +119,21 @@ body {
   font-family: 'poppins', sans-serif;
 }
 
+.meal-home {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: url('../media/Meals.jpg');
+  background-attachment: fixed;
+  background-repeat: none;
+  background-position: center;
+  background-size: cover;
+  filter: brightness(0.6);
+  box-shadow: 0 0 200px rgba(0, 0, 0, 0.952) inset;
+  display: flex;
+  justify-content: center;
+}
+
 .recipe-home {
   position: relative;
   width: 100%;

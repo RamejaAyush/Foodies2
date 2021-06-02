@@ -163,7 +163,18 @@ nav.scrolled .logo a img {
   flex-direction: column;
   align-items: right;
   justify-content: space-around;
+  animation: mymove1 10s;
 }
+
+@keyframes mymove1 {
+  from {
+    left: 40%;
+  }
+  to {
+    left: 51%;
+  }
+}
+
 .main-menu .heading h1 {
   color: #ffffff !important;
   font-size: 10vh;
@@ -174,6 +185,7 @@ nav.scrolled .logo a img {
   font-size: 6vh;
   margin: 0 5px;
 }
+
 .main-menu .heading h1,
 .main-menu .heading h3 {
   letter-spacing: 2px;
@@ -470,23 +482,24 @@ input[type='submit']:focus {
 
 .ayush .social-links .all-social-links,
 .arnold .social-links .all-social-links {
-  width: 50%;
+  width: 20%;
   height: 100%;
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
 
-.ayush .social-links .all-social-links a,
-.arnold .social-links .all-social-links a {
+.ayush .social-links .all-social-links i,
+.arnold .social-links .all-social-links i {
+  font-size: 32px;
   text-decoration: none;
-  color: #bebebe;
+  color: #858585;
   transition: all 250ms ease-in-out;
 }
-.ayush .social-links .all-social-links a:hover,
-.ayush .social-links .all-social-links a:focus,
-.arnold .social-links .all-social-links a:focus,
-.arnold .social-links .all-social-links a:hover {
+.ayush .social-links .all-social-links i:hover,
+.ayush .social-links .all-social-links i:focus,
+.arnold .social-links .all-social-links i:focus,
+.arnold .social-links .all-social-links i:hover {
   color: #ffffff;
 }
 
@@ -508,6 +521,7 @@ input[type='submit']:focus {
 
 /* *cooking section  */
 .cooking-home {
+  position: relative;
   width: 100%;
   height: 100vh;
   background: url('../media/cooking.jpg');
@@ -517,6 +531,28 @@ input[type='submit']:focus {
   background-size: cover;
   filter: brightness(0.6);
   box-shadow: 0 0 200px rgba(0, 0, 0, 0.952) inset;
+}
+
+.text-floating {
+  position: absolute;
+  top: 60%;
+  height: 20vh;
+  width: 20vw;
+  animation: mymove 10s;
+  left: 10%;
+}
+
+.text-floating h1 {
+  font-size: 45px;
+}
+
+@keyframes mymove {
+  from {
+    left: 20%;
+  }
+  to {
+    left: 10%;
+  }
 }
 
 .all-things {
@@ -531,6 +567,12 @@ input[type='submit']:focus {
   justify-content: space-between;
   align-items: center;
   padding: 0 1rem;
+}
+.add-own {
+  width: 30%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 .heading-all .add-own a {
   padding: 0.5rem;
@@ -673,7 +715,7 @@ input[type='submit']:focus {
 .order-home {
   width: 100%;
   height: 100vh;
-  background: url('./media/order.jpg');
+  background: url('../media/order.jpg');
   background-attachment: fixed;
   background-repeat: none;
   background-position: center;
@@ -1062,4 +1104,42 @@ form .submit #sub {
 
 .toogle .line3 {
   transform: rotate(45deg) translate(-5px, -6px);
+}
+
+.scroll {
+  position: absolute;
+  bottom: 2%;
+  left: 50%;
+}
+
+.fas {
+  color: white;
+}
+
+.animation-bounce {
+  animation: bounce 3s infinite;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  30% {
+    transform: translateY(-50px);
+  }
+  50% {
+    transform: translateY(5px);
+  }
+  70% {
+    transform: translateY(-25px);
+  }
+  80% {
+    transform: translateY(2px);
+  }
+  90% {
+    transform: translateY(-15px);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
