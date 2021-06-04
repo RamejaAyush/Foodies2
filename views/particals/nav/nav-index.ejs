@@ -3,10 +3,15 @@
   <a href="/"><img src="./media/new_logo.png" alt="Foodies" /></a>
  </div>
  <div class="nav-links scrolled">
-  <a href="/signup">Sign Up</a>
-  <a href="/login">Log In</a>
+  <% if (user) { %>
+  <p>Welcome, <%= user.email %></p>
   <a href="/#cat">Features</a>
-  <a href="/contact">Contact</a>
+  <a href="/logout">Log out</a>
+  <% } else { %>
+  <a href="/login">Log in</a>
+  <a href="/signup">Sign up</a>
+  <a href="/#cat">Features</a>
+  <% } %>
  </div>
  <div class="burger">
   <div class="line1"></div>
