@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+ <%- include('./particals/head/head-index.ejs') %>
+ <body>
+  <%- include('./particals/nav/nav-index-logged.ejs') %>
+  <div class="main-menu">
+   <video src="./media/mainMenu2.mp4" muted autoplay loop></video>
+   <div class="heading">
+    <h1>Hungry? Dont Worry!</h1>
+    <h3>Foodies has everything.</h3>
+    <a href="#cat" class="know">Know more</a>
+   </div>
+   <div class="scroll">
+    <h1 class="animation-bounce">
+     <i class="fas fa-angle-double-down"></i>
+    </h1>
+   </div>
+  </div>
+  <div class="features" id="cat">
+   <div class="header"></div>
+   <div class="card-section">
+    <div class="header-features">
+     <h1>Categories</h1>
+    </div>
+    <hr />
+    <div class="cards">
+     <div class="card">
+      <div class="card-head">
+       <h1>Cooking</h1>
+      </div>
+      <div class="card-content">
+       <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta
+        perferendis laborum cumque ducimus molestiae? Asperiores.
+       </p>
+      </div>
+      <div class="img-card">
+       <img src="./media/cooking.svg" />
+      </div>
+      <div class="card-btn">
+       <a href="#">Go to Cooking</a>
+      </div>
+     </div>
+     <div class="card">
+      <div class="card-head">
+       <h1>Order Online</h1>
+      </div>
+      <div class="card-content">
+       <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta
+        perferendis laborum cumque ducimus molestiae? Asperiores.
+       </p>
+      </div>
+      <div class="img-card">
+       <img src="./media/order.svg" />
+      </div>
+      <div class="card-btn">
+       <a href="#">Order Some Food</a>
+      </div>
+     </div>
+     <div class="card">
+      <div class="card-head">
+       <h1>Comparison</h1>
+      </div>
+      <div class="card-content">
+       <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta
+        perferendis laborum cumque ducimus molestiae? Asperiores.
+       </p>
+      </div>
+      <div class="img-card">
+       <img src="./media/camparison.svg" />
+      </div>
+      <div class="card-btn">
+       <a href="#">Coming Soon</a>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+  <script src="./app.js"></script>
+ </body>
+</html>

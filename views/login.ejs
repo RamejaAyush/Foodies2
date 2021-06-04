@@ -1,19 +1,44 @@
 <!DOCTYPE html>
 <html>
- <%- include('particals/head-login'); -%>
+ <%- include('particals/head/head-login'); -%>
  <body>
-  <%- include('particals/loginNav'); -%>
+  <%- include('particals/nav/nav-login'); -%>
 
-  <form action="/signup">
-   <h2>Login</h2>
-   <label for="email">Email</label>
-   <input type="text" name="email" />
-   <div class="email error"></div>
-   <label for="password">Password</label>
-   <input type="password" name="password" />
-   <div class="password error"></div>
-   <button>login</button>
-  </form>
+  <div class="login">
+   <div class="text-floating login-animation">
+    <h1>LOG IN</h1>
+   </div>
+   <div class="form-container">
+    <form action="/signup">
+     <div class="heading">
+      <h2>Login</h2>
+     </div>
+     <div class="email error"></div>
+     <div class="password error"></div>
+     <div class="emailInput">
+      <label for="email">Email</label>
+      <input
+       type="text"
+       name="email"
+       autocomplete="none"
+       placeholder="abc@xyz.com"
+      />
+     </div>
+     <div class="passwordInput">
+      <label for="password">Password</label>
+      <input
+       type="password"
+       name="password"
+       placeholder="Your Password"
+       autocomplete="none"
+      />
+     </div>
+     <div class="submit">
+      <button>login</button>
+     </div>
+    </form>
+   </div>
+  </div>
 
   <script>
    const form = document.querySelector('form');
@@ -44,7 +69,7 @@
       passwordError.textContent = data.errors.password;
      }
      if (data.user) {
-      location.assign('/');
+      location.assign('/index-logged');
      }
     } catch (err) {
      console.log(err);

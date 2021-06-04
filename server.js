@@ -38,6 +38,10 @@ app.get('/contact', requireAuth, (req, res) =>
  res.render('contact', { title: 'contact' })
 );
 
+app.get('/index-logged', requireAuth, (req, res) =>
+ res.render('index-logged', { title: 'index' })
+);
+
 app.get('/cooking', requireAuth, (req, res) =>
  res.render('cooking', { title: 'cooking' })
 );
@@ -53,14 +57,6 @@ app.get('/meals', requireAuth, (req, res) =>
 app.get('/recipe', requireAuth, (req, res) =>
  res.render('recipe', { title: 'recipe' })
 );
-
-// app.get('/login', (req, res) => {
-//  res.render('login', { title: 'login' });
-// });
-
-// app.get('/register', (req, res) => {
-//  res.render('register', { title: 'register' });
-// });
 
 app.use((req, res, next) => {
  res.status(404).render('404', { title: '404' });
