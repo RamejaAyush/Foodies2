@@ -36,6 +36,10 @@ app.get('/about', (req, res) => res.render('about', { title: 'about' }));
 
 app.get('/contact', (req, res) => res.render('contact', { title: 'contact' }));
 
+app.get('/add-own', requireAuth, (req, res) =>
+ res.render('add-own', { title: 'add-own' })
+);
+
 app.get('/index-logged', requireAuth, (req, res) =>
  res.render('index-logged', { title: 'index' })
 );
