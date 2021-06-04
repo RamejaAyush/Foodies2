@@ -28,6 +28,7 @@ mongoose
 
 // routes
 app.get('*', checkUser);
+
 app.use(authRoutes);
 
 app.get('/', (req, res) => res.render('index', { title: 'home' }));

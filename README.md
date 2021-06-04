@@ -1,2 +1,4 @@
 # Foodies
-Improving
+
+Improving soon
+currently in aplha testing
