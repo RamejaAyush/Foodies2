@@ -1,19 +1,46 @@
 <!DOCTYPE html>
 <html>
- <%- include('particals/head-login'); -%>
+ <%- include('particals/head/head-login'); -%>
  <body>
-  <%- include('particals/registerNav'); -%>
+  <%- include('particals/nav/nav-signup.ejs'); -%>
 
-  <form action="/signup">
-   <h2>Sign up</h2>
-   <label for="email">Email</label>
-   <input type="text" name="email" required />
-   <div class="email error"></div>
-   <label for="password">Password</label>
-   <input type="password" name="password" required />
-   <div class="password error"></div>
-   <button>Sign up</button>
-  </form>
+  <div class="sign-up">
+   <div class="text-floating">
+    <h1>SIGN UP</h1>
+   </div>
+   <div class="form-container">
+    <form action="/signup">
+     <div class="heading">
+      <h2>Sign up</h2>
+     </div>
+     <div class="password error"></div>
+     <div class="email error"></div>
+     <div class="emailInput">
+      <label for="email">Email</label>
+      <input
+       type="text"
+       name="email"
+       autocomplete="none"
+       placeholder="xyz@abc.com"
+       required
+      />
+     </div>
+     <div class="passwordInput">
+      <label for="password">Password</label>
+      <input
+       type="password"
+       autocomplete="none"
+       name="password"
+       placeholder="Your password"
+       required
+      />
+     </div>
+     <div class="submit">
+      <button>Sign up</button>
+     </div>
+    </form>
+   </div>
+  </div>
 
   <script>
    const form = document.querySelector('form');

@@ -1,0 +1,187 @@
+/* *order section */
+.order-home {
+ width: 100%;
+ height: 100vh;
+ background: url('../media/order.jpg');
+ background-attachment: fixed;
+ background-repeat: none;
+ background-position: center;
+ background-size: cover;
+ filter: brightness(0.6);
+ box-shadow: 0 0 200px rgba(0, 0, 0, 0.952) inset;
+}
+
+.all-websites {
+ width: 100%;
+ height: 600vh;
+ display: flex;
+ box-shadow: 0 0 200px rgba(71, 71, 71, 0.438) inset;
+ transition: all 150ms ease-in-out;
+}
+
+.fixed-section {
+ position: sticky;
+ top: 10vh;
+ left: 0;
+ width: 30vw;
+ height: 90vh;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+
+.container-index {
+ width: 95%;
+ height: 90%;
+ background: rgba(78, 78, 78, 0.356);
+ border-radius: 15px;
+ display: flex;
+ flex-direction: column;
+}
+
+.header-index {
+ width: 100%;
+ height: 15%;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+
+.content-index-website {
+ width: 100%;
+ height: 85%;
+ display: flex;
+ justify-content: space-around;
+ flex-direction: column;
+ align-items: center;
+}
+
+.content-index-website a {
+ text-decoration: none;
+ padding: 1rem 5rem;
+ color: rgb(153, 152, 152);
+ font-size: 20px;
+ transition: all 150ms ease-in-out;
+}
+
+.content-index-website a:hover {
+ color: #fff;
+}
+
+.webpage {
+ width: 100%;
+ height: 100vh;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+
+.zomatoscroll,
+.swiggyscroll,
+.dominosscroll,
+.pizzahutscroll,
+.kfcscroll,
+.foodpandascroll {
+ margin-top: 10vh;
+ width: 90%;
+ height: 80%;
+ border-radius: 15px;
+ background: #202020;
+}
+
+.webpage-image {
+ width: 100%;
+ height: 20%;
+ margin: auto;
+ border-top-left-radius: 15px;
+ border-top-right-radius: 15px;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+
+.webpage-image.zomat {
+ background: rgb(218, 19, 19);
+}
+.webpage-image.swigg {
+ background: rgb(255, 153, 1);
+}
+.webpage-image.domino {
+ background: rgb(2, 112, 255);
+}
+.webpage-image.pizzahu {
+ background: rgb(218, 19, 19);
+}
+.webpage-image.kf {
+ background: rgb(216, 216, 216);
+}
+.webpage-image.foodpand {
+ background: rgb(255, 7, 160);
+}
+
+.webpage-image h1 {
+ font-size: 35px;
+}
+
+.kf h1 {
+ color: black;
+}
+
+.webpage-content {
+ width: 100%;
+ height: 65%;
+ padding: 1rem 1rem;
+ display: flex;
+ flex-direction: column;
+ justify-content: space-around;
+}
+
+.webpage-content .about-website {
+ width: 100%;
+ height: 50%;
+ padding: 1rem;
+}
+
+.webpage-content .about-website p {
+ padding: 1rem;
+}
+
+.webpage-content .benefits {
+ width: 100%;
+ height: 50%;
+ padding: 1rem;
+}
+
+.webpage-content .benefits p {
+ padding: 1rem;
+}
+
+.scroll-section {
+ width: 70%;
+ height: 100%;
+}
+
+.link {
+ width: 100%;
+ height: 15%;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+
+.link a {
+ text-decoration: none;
+ border: 1px solid white;
+ padding: 1rem;
+ transition: all 150ms ease-in-out;
+}
+
+.link a:hover {
+ background-color: white;
+ color: black;
+}
+
+.web .scroll-section {
+ width: 70%;
+ height: 100%;
+}
