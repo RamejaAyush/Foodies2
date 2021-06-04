@@ -11,6 +11,20 @@
  box-shadow: 0 0 200px rgba(0, 0, 0, 0.952) inset;
 }
 
+.text-floating {
+ position: absolute;
+ top: 60%;
+ height: 20vh;
+ width: 20vw;
+ animation: mymove 10s;
+ left: 10%;
+}
+
+.text-floating h1 {
+ font-size: 45px;
+ color: white !important;
+}
+
 .all-websites {
  width: 100%;
  height: 600vh;
@@ -184,4 +198,13 @@
 .web .scroll-section {
  width: 70%;
  height: 100%;
+}
+
+@keyframes mymove {
+ from {
+  left: 20%;
+ }
+ to {
+  left: 10%;
+ }
 }
