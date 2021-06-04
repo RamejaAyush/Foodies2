@@ -3,9 +3,14 @@
   <a href="/"><img src="./media/new_logo.png" alt="Foodies" /></a>
  </div>
  <div class="nav-links scrolled">
-  <a class="sign-theme" href="/login">Login</a>
-  <a class="sign-theme" href="/contact">About</a>
-  <a class="sign-theme" href="/contact">Contact</a>
+  <% if (user) { %>
+  <a href="/cooking">Cooking</a>
+  <a href="/order">Order</a>
+  <a href="/logout">Log out</a>
+  <% } else { %>
+  <a href="/login">Log in</a>
+  <a href="/signup">Sign up</a>
+  <% } %>
  </div>
  <div class="burger">
   <div class="line1"></div>

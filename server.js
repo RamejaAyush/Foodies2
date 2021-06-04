@@ -34,9 +34,7 @@ app.get('/', (req, res) => res.render('index', { title: 'home' }));
 
 app.get('/about', (req, res) => res.render('about', { title: 'about' }));
 
-app.get('/contact', requireAuth, (req, res) =>
- res.render('contact', { title: 'contact' })
-);
+app.get('/contact', (req, res) => res.render('contact', { title: 'contact' }));
 
 app.get('/index-logged', requireAuth, (req, res) =>
  res.render('index-logged', { title: 'index' })

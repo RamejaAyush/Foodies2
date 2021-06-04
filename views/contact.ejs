@@ -1,101 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
-  <%- include('./particals/head.ejs') %>
-  <body class="contact">
-    <%- include('./particals/nav.ejs') %>
-    <div class="contact-section">
-      <div class="header"></div>
-      <div class="header"></div>
-      <div class="form-section">
-        <!-- <hr /> -->
-        <div class="all-form">
-          <div class="left-form">
-            <form action="#">
-              <div class="contact-form-header">
-                <h1>Send anything</h1>
-              </div>
-              <div class="name">
-                <label for="name">Name</label>
-                <input
-                  type="text"
-                  name="name"
-                  placeholder="Your Name"
-                  required
-                />
-              </div>
-              <div class="email contact">
-                <label for="email">Email</label>
-                <input
-                  type="email"
-                  name="email"
-                  placeholder="Your Email"
-                  required
-                />
-              </div>
-              <div class="subject">
-                <label for="subject">Subject</label>
-                <input
-                  type="text"
-                  name="Subject"
-                  placeholder="Anything"
-                  required
-                />
-              </div>
-              <div class="message">
-                <label for="message">Message</label>
-                <textarea
-                  name="message"
-                  placeholder="Message"
-                  cols="1"
-                  rows="1"
-                ></textarea>
-              </div>
-              <div class="submit">
-                <input type="submit" value="Send" />
-              </div>
-            </form>
-          </div>
-          <hr />
-          <div class="right-form">
-            <div class="right-link-header">
-              <h1>Or Find Us Here</h1>
-            </div>
-            <div class="links">
-              <div class="ayush">
-                <div class="name-link">
-                  <h1>Ayush Rameja</h1>
-                </div>
-                <div class="img">
-                  <img src="./media/ayush_foodies.jpg" />
-                </div>
-                <div class="social-links">
-                  <div class="all-social-links">
-                    <a href="#"><i class="fab fa-github"></i></a>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
-                  </div>
-                </div>
-              </div>
-              <div class="arnold">
-                <div class="name-link">
-                  <h1>Arnold Kevin Desouza</h1>
-                </div>
-                <div class="img">
-                  <img src="./media/arnold_foodies.jpg" />
-                </div>
-                <div class="social-links">
-                  <div class="all-social-links">
-                    <a href="#"><i class="fab fa-github"></i></a>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+ <%- include('./particals/head/head-contact.ejs') %>
+ <body class="contact">
+  <%- include('./particals/nav/nav-contact.ejs') %>
+  <div class="extra-spacing"></div>
+  <div class="contact-section">
+   <div class="header"></div>
+   <div class="header"></div>
+   <div class="form-section">
+    <!-- <hr /> -->
+    <div class="all-form">
+     <div class="left-form">
+      <form action="#">
+       <div class="contact-form-header">
+        <h1>Send anything</h1>
+       </div>
+       <div class="name">
+        <label for="name">Name</label>
+        <input type="text" name="name" placeholder="Your Name" required />
+       </div>
+       <div class="email contact">
+        <label for="email">Email</label>
+        <input type="email" name="email" placeholder="Your Email" required />
+       </div>
+       <div class="subject">
+        <label for="subject">Subject</label>
+        <input type="text" name="Subject" placeholder="Anything" required />
+       </div>
+       <div class="message">
+        <label for="message">Message</label>
+        <textarea
+         name="message"
+         placeholder="Message"
+         cols="1"
+         rows="1"
+        ></textarea>
+       </div>
+       <div class="submit">
+        <input type="submit" value="Send" />
+       </div>
+      </form>
+     </div>
+     <hr />
+     <div class="right-form">
+      <div class="right-link-header">
+       <h1>Or Find Us Here</h1>
       </div>
+      <div class="links">
+       <div class="ayush">
+        <div class="name-link">
+         <h1>Ayush Rameja</h1>
+        </div>
+        <div class="img">
+         <img src="./media/ayush_foodies.jpg" />
+        </div>
+        <div class="social-links">
+         <div class="all-social-links">
+          <a href="#"><i class="fab fa-github"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+         </div>
+        </div>
+       </div>
+       <div class="arnold">
+        <div class="name-link">
+         <h1>Arnold Kevin Desouza</h1>
+        </div>
+        <div class="img">
+         <img src="./media/arnold_foodies.jpg" />
+        </div>
+        <div class="social-links">
+         <div class="all-social-links">
+          <a href="#"><i class="fab fa-github"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
     </div>
+   </div>
+  </div>
 
-    <script src="./app.js"></script>
-  </body>
+  <script src="./app.js"></script>
+ </body>
 </html>
