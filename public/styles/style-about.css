@@ -3,3 +3,75 @@
  margin: 0;
  box-sizing: border-box;
 }
+
+.about-section {
+ width: 100%;
+ height: 100vh;
+}
+
+.main-about {
+ width: 100%;
+ height: 100vh;
+ display: flex;
+ justify-content: space-evenly;
+}
+
+.left-about {
+ width: 60%;
+ height: 100vh;
+}
+
+.left-about img {
+ width: 100%;
+ height: 100%;
+ object-fit: cover;
+}
+
+.right-about {
+ font-family: poppins, serif;
+ width: 40%;
+ height: 100%;
+ display: flex;
+ flex-direction: column;
+ justify-content: space-around;
+}
+
+.extra-about {
+ width: 100%;
+ height: 20%;
+}
+
+.title-about {
+ width: 100%;
+ height: 20%;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+
+.desc-about {
+ width: 100%;
+ height: 40%;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+}
+
+.desc-about p {
+ width: 85%;
+ height: 70%;
+ margin: auto;
+}
+
+.me {
+ margin-top: 10vh;
+ width: 85%;
+ height: 20%;
+ display: flex;
+ justify-content: flex-end;
+}
+
+.extra-spacing {
+ width: 100%;
+ height: 25vh;
+}
