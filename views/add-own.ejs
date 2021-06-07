@@ -2,62 +2,65 @@
 <html lang="en">
  <%- include('./particals/head/head-add-own.ejs') %>
  <body>
-  <%- include('./particals/nav/nav-add-own.ejs') %>
-  <div class="extra-spacing"></div>
-  <div class="add-own">
-   <div class="add-own-body">
-    <div class="instructions">
-     <div class="header-instructions">
-      <h1>All Instructions</h1>
+  <%- include('./responsive.ejs') %>
+  <div class="all-add-own">
+   <%- include('./particals/nav/nav-add-own.ejs') %>
+   <div class="extra-spacing"></div>
+   <div class="add-own">
+    <div class="add-own-body">
+     <div class="instructions">
+      <div class="header-instructions">
+       <h1>All Instructions</h1>
+      </div>
+      <div class="instructions-container">
+       <ol>
+        <li>Recipe Should be posted on a Blog/Website.</li>
+        <li>You can post a link of youtube video.</li>
+        <li>
+         You can also upload a word file on Google Drive and paste that link on
+         the link input field.
+        </li>
+        <li>
+         Foodies is correctly in alpha testing this instructions will be updated
+         shortly.
+        </li>
+        <li>
+         For some additional query, Contact the developers from the
+         <a href="/contact">Contact</a> Section.
+        </li>
+       </ol>
+      </div>
      </div>
-     <div class="instructions-container">
-      <ol>
-       <li>Recipe Should be posted on a Blog/Website.</li>
-       <li>You can post a link of youtube video.</li>
-       <li>
-        You can also upload a word file on Google Drive and paste that link on
-        the link input field.
-       </li>
-       <li>
-        Foodies is correctly in alpha testing this instructions will be updated
-        shortly.
-       </li>
-       <li>
-        For some additional query, Contact the developers from the
-        <a href="/contact">Contact</a> Section.
-       </li>
-      </ol>
-     </div>
-    </div>
-    <div class="form-container">
-     <div class="heading">
-      <h1>Add you Own Recipe</h1>
-     </div>
-     <div class="form-container-border">
-      <form action="/cooking">
-       <div class="emailInput">
-        <label for="name">Enter Name</label>
-        <input
-         type="text"
-         maxlength="8"
-         placeholder="your name"
-         autocomplete="none"
-         required
-        />
-       </div>
-       <div class="linkInput">
-        <label for="link">Link</label>
-        <input
-         type="text"
-         required
-         placeholder="Enter the link of the recipe"
-         autocomplete="none"
-        />
-       </div>
-       <div class="submit">
-        <input type="submit" value="Submit" />
-       </div>
-      </form>
+     <div class="form-container">
+      <div class="heading">
+       <h1>Add you Own Recipe</h1>
+      </div>
+      <div class="form-container-border">
+       <form action="/cooking">
+        <div class="emailInput">
+         <label for="name">Enter Name</label>
+         <input
+          type="text"
+          maxlength="8"
+          placeholder="your name"
+          autocomplete="none"
+          required
+         />
+        </div>
+        <div class="linkInput">
+         <label for="link">Link</label>
+         <input
+          type="text"
+          required
+          placeholder="Enter the link of the recipe"
+          autocomplete="none"
+         />
+        </div>
+        <div class="submit">
+         <input type="submit" value="Submit" />
+        </div>
+       </form>
+      </div>
      </div>
     </div>
    </div>
