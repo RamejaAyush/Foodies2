@@ -19,7 +19,7 @@ Install Foodies with npm
 
 ## Deployment
 
-To deploy Foodies on you localhost
+To deploy Foodies on your localhost
 
 - Command for localhost
 
