@@ -37,7 +37,9 @@ To run this project, you will need to add the following environment variables to
 
 ## Issues
 
-Foodies is currently in development so, if you are having issues in login just make a new account from signup page.
+- Foodies is currently in development so, if you are having issues in login just make a new account from signup page.
+
+- Images on Cooking Section are not Visible fixing soon.
 
 ## Lessons Learned
 
