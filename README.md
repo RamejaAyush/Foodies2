@@ -10,11 +10,10 @@ So if you are hungry you can do what ever you want.
 
 ## Installation
 
-Install Foodies with npm
+Install all the dependences with npm
 
 ```bash
-  npm install Foodies
-  cd Foodies
+  npm install
 ```
 
 ## Deployment
