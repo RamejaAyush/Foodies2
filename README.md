@@ -34,6 +34,10 @@ To run this project, you will need to add the following environment variables to
 
 `SECRET _KEY`
 
+## Update
+
+Working on react,I will also make a react version of this site.
+
 ## Issues
 
 - Foodies is currently in development so, if you are having issues in login just make a new account from signup page.
