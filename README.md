@@ -42,8 +42,6 @@ Working on react,I will also make a react version of this site.
 
 - Foodies is currently in development so, if you are having issues in login just make a new account from signup page.
 
-- Images on Cooking Section are not Visible fixing soon.
-
 ## Lessons Learned
 
 - Learned how to create application with Node.js
