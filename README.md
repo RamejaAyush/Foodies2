@@ -63,5 +63,3 @@ Working on react,I will also make a react version of this site.
 ![Cooking](https://github.com/RamejaAyush/Foodies_node/blob/master/public/media/cookingss.png?raw=true)
 
 ![Order](https://github.com/RamejaAyush/Foodies_node/blob/master/public/media/orderss.png?raw=true)
-
-![Contact](https://github.com/RamejaAyush/Foodies_node/blob/master/public/media/contactss.png?raw=true)
