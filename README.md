@@ -10,16 +10,15 @@ So if you are hungry you can do what ever you want.
 
 ## Installation
 
-Install Foodies with npm
+Install all the dependences with npm
 
 ```bash
-  npm install Foodies
-  cd Foodies
+  npm install
 ```
 
 ## Deployment
 
-To deploy Foodies on you localhost
+To deploy Foodies on your localhost
 
 - Command for localhost
 
@@ -34,6 +33,10 @@ To run this project, you will need to add the following environment variables to
 `API_KEY`
 
 `SECRET _KEY`
+
+## Update
+
+Working on react,I will also make a react version of this site.
 
 ## Issues
 
