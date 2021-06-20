@@ -54,30 +54,6 @@ body {
  color: rgba(223, 5, 5, 0.664);
 }
 
-@keyframes floating {
- 0% {
-  transform: translateX(0%);
- }
- 50% {
-  transform: translateX(100%);
- }
- 100% {
-  transform: translateX(0%);
- }
-}
-
-@keyframes floating-login {
- 0% {
-  transform: translateX(0%);
- }
- 50% {
-  transform: translateX(100%);
- }
- 100% {
-  transform: translateX(0%);
- }
-}
-
 .sign-up .form-container {
  z-index: 2;
  margin-top: 20vh;
@@ -87,7 +63,7 @@ body {
  justify-content: center;
  align-items: center;
  background: #0097d3;
- box-shadow: 0px 0px 0px 0px rgba(252, 0, 0, 0.863);
+ box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.863);
  transition: all 150ms ease-in-out;
 }
 
@@ -99,17 +75,17 @@ body {
  display: flex;
  justify-content: center;
  align-items: center;
- background: rgba(252, 0, 0, 0.863);
- box-shadow: 0px 0px 0px 0px rgba(0, 172, 252, 0.863);
+ background: rgb(255, 3, 3);
+ box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.863);
  transition: all 150ms ease-in-out;
 }
 
 .sign-up .form-container:hover {
- box-shadow: 10px 10px 0 0 rgba(252, 0, 0, 0.863);
+ box-shadow: 10px 10px 0 0 #0097d38a;
  transform: translate(-10px, -10px);
 }
 .login .form-container:hover {
- box-shadow: 10px 10px 0 0 rgba(0, 172, 252, 0.863);
+ box-shadow: 10px 10px 0 0 rgba(253, 0, 0, 0.418);
  transform: translate(-10px, -10px);
 }
 
